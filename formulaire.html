@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation </title>
+    <link rel ="stylesheet" href="formulaire.css">
+  
+     
+</head>
+<body>
+    <div class="container">
+        <form>
+            
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="enter your name" id="contact-name" >
+                <span id="name-error" >name is required</span>
+            </div>
+               <div class="input-group">
+                <label>phone </label>
+                <input type="text" placeholder="123 456 7890 "   id="contact-phone">
+                <span id="phone-error" >phone is required</span>
+                </div>
+               <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" id="contact-email">
+                <span id="email-error" >email is required</span>
+              </div>
+            <div class="input-group">
+                <label> birthday</label>
+                <input type="date" placeholder="Enter birthday"  id="contact-birthday">
+                <span id="birthday-error" >birthday is required</span>
+            </div>
+            <button onclick="onSumbit()" type="button" >Submit</button>
+            
+            <div id="list"></div>
+        
+        </form>
+        
+    </div>
+    <script src="formulaire.js"></script>
+</body>
+</html>
